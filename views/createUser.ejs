@@ -1,0 +1,44 @@
+<%- include("templates/header") %>
+    <main class="form-signin w-25 m-auto">
+      <form action="/submitUser" method="post">
+        <h1 class="h3 mb-3 fw-normal">Create an account</h1>
+        <div class="form-floating">
+          <input
+            type="text"
+            name="name"
+            class="form-control"
+            id="floatingInput"
+            placeholder="John"
+          />
+          <label for="floatingInput">Name</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="email"
+            name="email"
+            class="form-control"
+            id="floatingEmail"
+            placeholder="name@example.com"
+          />
+          <label for="floatingEmail">Email</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            name="password"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="Password"
+          />
+          <label for="floatingPassword">Password</label>
+        </div>
+        <button
+          class="w-100 btn btn-lg btn-primary"
+          style="margin-top: 32px"
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </main>
+<%- include("templates/footer") %>
